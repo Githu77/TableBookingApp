@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='script/script.js') }}"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="top-header hide-for-small-only">
+            <div class="grid-container">
+                <div class="logo">
+                    <img class="logo-img" src="https://www.designmantic.com/images/industry/beverage/dm-food-logo-09.png" alt="hotel logo">
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="search">
+            <div class="search-bar">
+                <input type="text" onkeyup="searchHotel()" id="search" placeholder="Search hotel" class="search-box">
+                <img onclick="searchHotel()" class="search-icon" src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-21.png" alt="search-icon">
+
+            </div>
+        </div>
+    </header>
+
+    <div class="grid-container">
+    <img class="hotel-img" src="https://images.summitmedia-digital.com/spotph/images/2023/12/13/50-great-1702427222.jpg" alt="hotel img">
+    </div>
+
+    <section class="hotels" id="hotels">
+        <div id="app-content">
+            <div>
+                <div class="body-container-general">
+                    <div class="grid-container">
+                        <h1 class="heading">Explore hotels in Kenya</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
