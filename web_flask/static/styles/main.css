@@ -1,0 +1,257 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: ;
+}
+
+.header
+{
+    position: relative;
+    top: 0;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    padding-left: 2%;
+    padding-right: 3%;
+    margin: 3px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-image: url('static/images/hotel_landing.jpg');
+    border-radius: 10px;
+}
+
+.navigation ul
+{
+    display: flex;
+    justify-content: right;
+    margin-top: 0;
+    margin-left: 5%;
+    padding: 10px;
+    color: #F4E2C6;
+}
+
+.navigation ul li
+{
+    margin: 15px 5%;
+    cursor: pointer;
+}
+
+a
+{
+     color: inherit;
+    text-decoration: none;
+}
+
+.navigation ul li:hover
+{
+    border-bottom: 2px solid #F4E2C6;
+}
+
+.logo
+{
+    width: 50%;
+    height: 100px;
+    /*background-color: yellow;*/
+    display: flex;
+
+}
+
+.logo img
+{
+    height: 120px;
+}
+
+.navigation li
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    display: flex;
+}
+
+.btn-1
+{
+    margin: 10px 5%;
+    color: #F4E2C6;
+    background: transparent;
+    padding: 8px;
+    border-radius: 15px;
+    border: solid 2px  ;
+    cursor: pointer;
+}
+
+.btn-2
+{
+    margin: 10px 5%;
+    border: none;
+    color: #000000;
+    background: #F4E2C6;
+    padding: 8px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.btn-1:hover
+{
+    background: #F4E2C6;
+    border: solid 2px transparent;
+    color: #000000;
+}
+
+.btn-2:hover
+{
+    color: #F4E2C6;
+    background: transparent;
+    border: solid 2px;
+}
+
+.header-text
+{
+    color: #F4E2C6;
+    font-size: 2rem;
+}
+.hotel-img
+{
+    width: 100%;
+    height: 50%;
+}
+
+main
+{
+
+}
+
+.island
+{
+    margin: 3%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #71797E;
+}
+.grid-container
+{
+    margin: 18px 0;
+    padding: 3px;
+}
+
+.services-articles
+{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     margin: 5% 0;
+     height: 45vh;
+}
+
+.services-articles article
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0 5%;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px grey;
+}
+
+.services-content
+{
+    width: 70%;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1.5%;
+    margin: 1.5%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.about .article-image
+{
+    border: 2px solid #71797E;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.about-flex img
+{
+    height: 100%;
+
+}
+
+.about-container
+{
+    position: relative;
+    margin: 3px;
+    background-image: url('static/images/about-bk.jpg');
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+
+}
+
+.about-flex
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+
+}
+
+.about-span
+{
+    font-size: 1.6rem;
+    margin: 0 10% 0 0;
+}
+.about-container article
+{
+    margin: 30px;
+    padding: 2%;
+
+    color: #F4E2C6;
+    font-size: 1.2rem;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 5px #F4E2C6;
+}
+
+.footer-links ul
+{
+    position: relative;
+    background-image: url('static/images/about-bk.jpg');
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #F4E2C6;
+    background-size: cover;
+    background-position: center;
+    gap: 1%;
+    margin: 3px;
+    border-radius: 10px;
+
+
+}
+
+.footer-links ul li
+{
+    text-decoration: none;
+    padding: 3%;
+}
+
+.footer-links ul li:hover
+{
+    border-bottom: solid 1px #F4E2C6;
+}
+

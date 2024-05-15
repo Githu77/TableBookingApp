@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandala</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='script/script.js') }}"></script>
+</head>
+<body>
+
+    <header class="header" id="home" style="background-image:  url('static/images/hotel_landing.jpg');">
+            <div class="logo">
+                <img class="logo-img" <img src="{{ url_for('static', filename='images/logo2.png') }}" alt="hotel logo">
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <button class="btn-1"> Register</button>
+                    <button class="btn-2"> Sign in</button>
+                </ul>
+            </div>
+            <div class="header-text">
+                <h1>Book your retreat with us</h1>
+                <p>Discover your true luxury taste!</p>
+            </div>
+    </header>
+
+    <main>
+        <div class="island" id="services">
+            <h3 style="margin-bottom: 1%;">Our Services</h3>
+            <p>Discover unparalleled luxury at Mandala Hotel. Our exquisite multi-cuisine fine dining restaurant, nestled within the elegant confines of Mandala Hotel, offers an unforgettable culinary experience. From gourmet delights to personalized service, we redefine hospitality.</p>
+        </div>
+
+        <section class="about">
+            <div class="about-container" style="background-image:  url('static/images/about-bk.jpg');">
+                <article class="about-flex" style="grid-area: 1/1/2/2;">
+                <img src="{{ url_for('static', filename='images/bed-accommodation.jpg') }}" alt="Article Image" class="article-image">
+                    <p class="article-content">
+                        <span class="about-span">Accommodation</span><br><br>
+                        Booking a room at Mandala Hotel is simple: visit our website, navigate to the “Book Now” option, choose your desired check-in and check-out dates, and then select your preferred room. Welcome to Mandala Hotel!
+                    </p>
+                </article>
+                <article class="about-flex" style="grid-area: 2/1/3/2;">
+                    <img src="{{ url_for('static', filename='images/bar1.jpg') }}" alt="Article Image" class="article-image">
+                    <p class="article-content">
+                        <span class="about-span">The Bar</span><br><br>
+                        At Mandala Hotel, our elegant establishment boasts a sophisticated bar where guests can unwind and enjoy handcrafted cocktails, fine wines, and delightful conversations. Cheers to unforgettable moments!
+
+                    </p>
+                </article>
+                <article style="grid-area: 1/2/3/3;">
+                <img src="{{ url_for('static', filename='images/table-dining.jpg') }}" alt="Article Image" class="article-image">
+                    <p class="article-content">
+                        <span class="about-span">Dining</span><br><br>
+                        Visit Our Website and explore the dining section. Choose Your Date and Time by selecting your preferred date and time for your dining experience. Reserve Your Table by clicking on the reservation option and providing the necessary details. Our team will ensure a delightful meal awaits you at Mandala Hotel. Bon appétit!
+
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <div class="grid-container">
+            <div class="services-articles">
+                <article style="background-image:  url('static/images/dining.jpg');">
+                    <p class="services-content">
+                        Dining
+                    </p>
+                </article>
+                <article style="background-image: url('static/images/accommodation-dk.jpg');">
+                    <p class="services-content">
+                        Accommodation
+                    </p>
+                </article>
+                <article style="background-image: url('static/images/wellbeing-dk.jpg');">
+                    <p class="services-content">
+                        Fitness
+                    </p>
+                </article>
+                <article style="background-image: url('static/images/bar.jpg');">
+                    <p class="services-content">
+                        The Bar
+                    </p>
+                </article>
+            </div>
+        </div>
+    </main>
+    <footer style="text-align: center;">
+         <div class="island" id="about">
+            <h3 style="margin-bottom: 1%;">About US</h3>
+            <p>Mandala Hotel is more than a place to rest; it’s a canvas for memories. Whether you’re here for business or leisure, our dedicated team ensures that your experience is seamless, memorable, and filled with moments that linger long after you’ve checked out.
+                Discover Mandala Hotel—a symphony of elegance, hospitality, and soulful connections.
+            </p>
+        </div>
+        <div class="footer-links" style="background-image:  url('static/images/about-bk.jpg');">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li>Rooms & Suites</li>
+                <li>Dining</li>
+                <li>Spa & Wellness</li>
+                <li>Events & Meetings</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <span class="island">copyright @2024 :)</span>
+    </footer>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
