@@ -17,13 +17,13 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
-                    <button class="btn-1"> Register</button>
-                    <button class="btn-2"> Sign in</button>
+                    <li><a href="{{ url_for('signup') }}">Register/Login</li>
                 </ul>
             </div>
             <div class="header-text">
                 <h1>Book your retreat with us</h1>
                 <p>Discover your true luxury taste!</p>
+                <button class="btn-1">Book Now</button>
             </div>
     </header>
 
@@ -32,31 +32,20 @@
             <h3 style="margin-bottom: 1%;">Our Services</h3>
             <p>Discover unparalleled luxury at Mandala Hotel. Our exquisite multi-cuisine fine dining restaurant, nestled within the elegant confines of Mandala Hotel, offers an unforgettable culinary experience. From gourmet delights to personalized service, we redefine hospitality.</p>
         </div>
-
         <section class="about">
-            <div class="about-container" style="background-image:  url('static/images/about-bk.jpg');">
-                <article class="about-flex" style="grid-area: 1/1/2/2;">
+            <h3 class="section-title" id="about">About Us</h3>
+            <div class="about-container">
+                <article>
                 <img src="{{ url_for('static', filename='images/bed-accommodation.jpg') }}" alt="Article Image" class="article-image">
-                    <p class="article-content">
-                        <span class="about-span">Accommodation</span><br><br>
-                        Booking a room at Mandala Hotel is simple: visit our website, navigate to the “Book Now” option, choose your desired check-in and check-out dates, and then select your preferred room. Welcome to Mandala Hotel!
-                    </p>
+                    <p><strong>Accommodation</strong><br>Booking a room at Mandala Hotel is simple: visit our website, navigate to the “Book Now” option, choose your desired check-in and check-out dates, and then select your preferred room. Welcome to Mandala Hotel!</p>
                 </article>
-                <article class="about-flex" style="grid-area: 2/1/3/2;">
+                <article>
                     <img src="{{ url_for('static', filename='images/bar1.jpg') }}" alt="Article Image" class="article-image">
-                    <p class="article-content">
-                        <span class="about-span">The Bar</span><br><br>
-                        At Mandala Hotel, our elegant establishment boasts a sophisticated bar where guests can unwind and enjoy handcrafted cocktails, fine wines, and delightful conversations. Cheers to unforgettable moments!
-
-                    </p>
+                    <p><strong>The Bar</strong><br>At Mandala Hotel, our elegant establishment boasts a sophisticated bar where guests can unwind and enjoy handcrafted cocktails, fine wines, and delightful conversations. Cheers to unforgettable moments!</p>
                 </article>
-                <article style="grid-area: 1/2/3/3;">
+                <article>
                 <img src="{{ url_for('static', filename='images/table-dining.jpg') }}" alt="Article Image" class="article-image">
-                    <p class="article-content">
-                        <span class="about-span">Dining</span><br><br>
-                        Visit Our Website and explore the dining section. Choose Your Date and Time by selecting your preferred date and time for your dining experience. Reserve Your Table by clicking on the reservation option and providing the necessary details. Our team will ensure a delightful meal awaits you at Mandala Hotel. Bon appétit!
-
-                    </p>
+                    <p><strong>Dining</strong><br>Visit our website and explore the dining section. Choose your date and time for your dining experience. Reserve your table by clicking on the reservation option and providing the necessary details. Our team will ensure a delightful meal awaits you at Mandala Hotel. Bon appétit!</p>
                 </article>
             </div>
         </section>
@@ -85,27 +74,24 @@
                 </article>
             </div>
         </div>
-    </main>
-    <footer style="text-align: center;">
-         <div class="island" id="about">
-            <h3 style="margin-bottom: 1%;">About US</h3>
-            <p>Mandala Hotel is more than a place to rest; it’s a canvas for memories. Whether you’re here for business or leisure, our dedicated team ensures that your experience is seamless, memorable, and filled with moments that linger long after you’ve checked out.
-                Discover Mandala Hotel—a symphony of elegance, hospitality, and soulful connections.
-            </p>
+        <div class="call-to-action">
+            <button class="cta-btn" onclick="location.href='book-table.html'">Book a Table</button>
         </div>
-        <div class="footer-links" style="background-image:  url('static/images/about-bk.jpg');">
+    </main>
+<footer>
+        <div class="footer-links">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#about">About</a></li>
-                <li>Rooms & Suites</li>
-                <li>Dining</li>
-                <li>Spa & Wellness</li>
-                <li>Events & Meetings</li>
-                <li>Contact Us</li>
+                <li><a href="#">Rooms & Suites</a></li>
+                <li><a href="#">Dining</a></li>
+                <li><a href="#">Spa & Wellness</a></li>
+                <li><a href="#">Events & Meetings</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </div>
-        <span class="island">copyright @2024 :)</span>
+        <span>&copy; 2024 Mandala Hotel</span>
     </footer>
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -117,40 +103,4 @@
             });
         });
     </script>
-    <header class="header">
-        <div class="top-header hide-for-small-only">
-            <div class="grid-container">
-                <div class="logo">
-                    <img class="logo-img" src="https://www.designmantic.com/images/industry/beverage/dm-food-logo-09.png" alt="hotel logo">
-                </div>
-
-            </div>
-        </div>
-        
-        <div class="search">
-            <div class="search-bar">
-                <input type="text" onkeyup="searchHotel()" id="search" placeholder="Search hotel" class="search-box">
-                <img onclick="searchHotel()" class="search-icon" src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-21.png" alt="search-icon">
-
-            </div>
-        </div>
-    </header>
-
-    <div class="grid-container">
-    <img class="hotel-img" src="https://images.summitmedia-digital.com/spotph/images/2023/12/13/50-great-1702427222.jpg" alt="hotel img">
-    </div>
-
-    <section class="hotels" id="hotels">
-        <div id="app-content">
-            <div>
-                <div class="body-container-general">
-                    <div class="grid-container">
-                        <h1 class="heading">Explore hotels in Kenya</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-</body>
 </html>
