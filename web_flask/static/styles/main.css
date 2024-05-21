@@ -142,6 +142,7 @@ a
             margin-bottom: 2%;
             font-size: 2rem;
             color: #555;
+            width: 90%
         }
 
 .island
@@ -197,6 +198,7 @@ a
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            
         }
 
         .about-container article {

@@ -1,0 +1,32 @@
+{% extends 'admindashboard.html' %}
+
+{% block title %}My Reservations{% endblock %}
+
+{% block content %}
+<h2 style="text-align: center;">History</h2>
+<table style="max-height: 300px; overflow-y: auto;"border="1">
+    <tr>
+        <th>ID</th>
+        <th>Username</th>
+        <th>Guests</th>
+        <th>Seating Preference</th>
+        <th>Reservation Date</th>
+        <th>Reservation Time</th>
+        <th>Special Request</th>
+        <th>Email</th>
+    </tr>
+    {% for reservation in reservations %}
+    <tr>
+        <td>{{ reservation.id }}</td>
+        <td>{{ reservation.username }}</td>
+        <td>{{ reservation.guests }}</td>
+        <td>{{ reservation.seating_preference }}</td>
+        <td>{{ reservation.reservation_date }}</td>
+        <td>{{ reservation.reservation_time }}</td>
+        <td>{{ reservation.special_request }}</td>
+        <td>{{ reservation.email }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+
